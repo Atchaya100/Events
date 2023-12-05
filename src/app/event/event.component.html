@@ -1,0 +1,16 @@
+<div><form #formRef="ngForm" (ngSubmit)="add(formRef.value)" class="form-group">
+    <label>Event Title:</label>
+    <input [(ngModel)]="title" name="title"  type="text" required  class="form-control"/><br>
+    <label>Event Date:</label>
+    <input [(ngModel)]="date" name="date"  type="date" required  class="form-control"/><br>
+    <label>Start Time:</label>
+  <!--  <input [(ngModel)]="start" name="start"  type="text" required  class="form-control"/><br> -->
+    <input  [(ngModel)]="start" name="start"  type="text" required  class="form-control" placeholder="24hr format" aria-label="24hr format" [ngxTimepicker]="fullTime" [format]="24"  readonly>
+    <ngx-material-timepicker #fullTime></ngx-material-timepicker>
+    <label>End Time:</label>
+    <input  [(ngModel)]="end" name="end"  type="text" required  class="form-control" placeholder="24hr format" aria-label="24hr format" [ngxTimepicker]="fullTime1" [format]="24"  readonly>
+    <ngx-material-timepicker #fullTime1></ngx-material-timepicker>
+    <button  [disabled]="formRef.invalid">Add</button>
+  </form>
+  <button  (click)="close()">Close</button>
+</div>

@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+body{
+    margin:0;
+}
+.timepicker-overlay {
+    z-index: 1100 !important;
+  }
+  
+  .timepicker-backdrop-overlay {
+    z-index: 1100 !important;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

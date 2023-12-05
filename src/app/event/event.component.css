@@ -1,0 +1,14 @@
+div{
+    margin: auto;
+    width:70%;
+    overflow: auto;
+    padding:30px;
+}
+button{
+    background-color: rgb(176, 176, 195);
+    border:none;
+    padding:10px;
+    margin:10px;
+    border-radius: 5px;
+    color:white;
+}
